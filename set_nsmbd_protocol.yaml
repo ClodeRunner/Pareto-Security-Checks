@@ -1,5 +1,8 @@
 id: set_nsmbd_protocol
+titlePass: "SMB v1 is off"
+titleFail: "SMB v1 ON"
 title: "SMB v1 off"
+url: https://support.apple.com/en-us/HT211927
 check: |
   /usr/bin/grep -c "protocol_vers_map=6" /etc/nsmb.conf
 result:
