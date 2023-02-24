@@ -1,0 +1,6 @@
+id: set_nsmbd_protocol
+title: "SMB v1 off"
+check: |
+  /usr/bin/grep -c "protocol_vers_map=6" /etc/nsmb.conf
+result:
+  integer: 1
